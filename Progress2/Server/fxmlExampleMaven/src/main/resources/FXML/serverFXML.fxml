@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="serverLogin" fx:controller = "serverController" fx:id = "serverRoot">
+	
+	<VBox>
+		<Text fx:id="server_home_title" text="Enter The Server Port" />
+		
+		<HBox>
+			<TextField fx:id="insert_port"/>
+			<Button fx:id="check_port" text="Run" onAction="#run_server" />
+		</HBox>
+		
+		<Text fx:id="server_port_message" text="Please enter a valid port number" />
+	</VBox>
+	
+</BorderPane>
+
